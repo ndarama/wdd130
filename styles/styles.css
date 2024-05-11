@@ -47,6 +47,17 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
+}
+aside img {
+    width: 200px;
+    height: auto;
+    
+}
+aside h2 {
+    position: absolute;
+    top: 55px;
+    left: 150px;
 }
 main nav {
     width: 150px;
@@ -69,22 +80,4 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
-}
-
-aside  {
-    width: 20em;
-    text-align: center;
-    position: relative;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-
-aside h2 {
-    position: absolute;
-    top: 55px;
-    left: 150px;
 }
