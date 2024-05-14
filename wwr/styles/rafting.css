@@ -19,9 +19,9 @@
 
 /* General Styles */
 body {
-  font-family: var(--paragraph-font);
-  background-color: var(--nav-background-color);
-  color: var(--second-color);
+  font-family: var(--paragraph-font, 'Roboto', serif);
+  background-color: var(--nav-background-color, #f7ebe8);
+  color: var(--second-color, #1e1e24);
   margin: 0;
   padding: 0;
 }
@@ -34,25 +34,25 @@ body {
 
 /* Headings and Paragraphs */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+  color: var(--primary-color, #e54b4b);
   margin-top: 0;
-  font-family: var(--heading-font);
+  font-family: var(--heading-font, 'Roboto', serif);
 }
 
 p {
-  color: var(--second-color);
-  font-family: var(--paragraph-font);
+  color: var(--second-color, #1e1e24);
+  font-family: var(--paragraph-font, 'Roboto', serif);
 }
 
 /* Links */
 a {
-  color: var(--nav-link-color);
+  color: var(--nav-link-color, #1e1e24);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color, #1e1e24);
+  background-color: var(--nav-hover-background-color, #ffa987);
 }
 
 /* Social Media Links */
@@ -74,10 +74,8 @@ a:hover {
 .hero h1 {
   position: absolute;
   top: 20%;
-  left: 40%;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
   font-size: 3rem;
 }
 
@@ -85,36 +83,35 @@ a:hover {
   position: absolute;
   top: 30%;
   left: 10%;
-  background-color: rgba(226, 226, 226, 0.805);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 20px;
   max-width: 1200px;
 }
 
 .hero article img {
-    float: right;
-    width: 250px;
-    margin-right: auto;
-
+  float: right;
+  width: 250px;
+  margin-right: auto;
 }
 
 /* Additional Styling for Visual Appeal */
 header {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, #e54b4b);
   color: #fff;
   padding: 20px 0;
   text-align: left;
 }
 
 footer {
-  background-color: var(--nav-background-color);
+  background-color: var(--nav-background-color, #f7ebe8);
   color: #fff;
   padding: 10px 0;
   text-align: center;
 }
 
 button {
-  background-color: var(--accent1-color);
+  background-color: var(--accent1-color, #ffa987);
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -122,5 +119,5 @@ button {
 }
 
 button:hover {
-  background-color: var(--accent2-color);
+  background-color: var(--accent2-color, #444140);
 }
