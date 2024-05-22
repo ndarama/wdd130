@@ -1,0 +1,127 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #e54b4b;
+  --second-color: #1e1e24;
+  --accent1-color: #ffa987;
+  --accent2-color: #444140;
+
+  --heading-font: 'Roboto', serif;
+  --paragraph-font: 'Roboto', serif;
+
+  --nav-background-color: #f7ebe8;
+  --nav-link-color: #1e1e24;
+  --nav-hover-link-color: #1e1e24;
+  --nav-hover-background-color: #ffa987;
+}
+
+/* General Styles */
+body {
+  font-family: var(--paragraph-font);
+  background-color: var(--nav-background-color);
+  color: var(--second-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Headings and Paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-family: var(--heading-font);
+}
+
+p {
+  color: var(--second-color);
+  line-height: 1.6;
+  font-family: var(--paragraph-font);
+}
+
+/* Links */
+a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Social Media Links */
+.social-media a {
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 3rem;
+}
+
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.hero article img {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Additional Styling for Visual Appeal */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+button {
+  background-color: var(--accent1-color);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent2-color);
+}
+`
