@@ -67,6 +67,7 @@ header, .grid, footer {
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
   }
   
   aside img {
@@ -76,8 +77,8 @@ header, .grid, footer {
   
   aside h2 {
     position: absolute;
-    top: 160px;
-    left: 480px;
+    top: 40px;
+    left: 110px;
   }
   
   footer {
