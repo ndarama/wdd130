@@ -55,9 +55,32 @@ a:hover {
   background-color: var(--nav-hover-background-color, #ffa987);
 }
 
-/* Social Media Links */
-.social-media a {
-  text-decoration: none;
+/* Header */
+header {
+  background-color: var(--primary-color, #e54b4b);
+  color: #fff;
+  padding: 20px 0;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 120px 1fr 2fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content:center;
+}
+
+header nav a {
+  color: #fff;
+  padding: 0 10px;
 }
 
 /* Hero Section */
@@ -100,19 +123,71 @@ a:hover {
   margin-right: auto;
 }
 
-/* Additional Styling for Visual Appeal */
-header {
-  background-color: var(--primary-color, #e54b4b);
-  color: #fff;
+/* History Section */
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 20px 0;
-  text-align: left;
 }
 
+.history div {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adventures Section */
+.adventures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  padding: 20px 0;
+}
+
+.adventures figure {
+  flex: 1 1 20px;
+  margin: 10px;
+  position: relative;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.adventures figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+}
+
+/* Footer */
 footer {
   background-color: var(--nav-background-color, #f7ebe8);
-  color: #fff;
+  color: var(--second-color, #1e1e24);
   padding: 10px 0;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .social-media a {
+  margin-left: 10px;
 }
 
 button {
