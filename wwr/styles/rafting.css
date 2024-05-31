@@ -19,9 +19,9 @@
 
 /* General Styles */
 body {
-  font-family: var(--paragraph-font, 'Roboto', serif);
-  background-color: var(--nav-background-color, #f7ebe8);
-  color: var(--second-color, #1e1e24);
+  font-family: var(--paragraph-font);
+  background-color: var(--nav-background-color);
+  color: var(--second-color);
   margin: 0;
   padding: 0;
 }
@@ -34,30 +34,30 @@ body {
 
 /* Headings and Paragraphs */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color, #e54b4b);
+  color: var(--primary-color);
   margin-top: 0;
-  font-family: var(--heading-font, 'Roboto', serif);
+  font-family: var(--heading-font);
 }
 
 p {
-  color: var(--second-color, #1e1e24);
-  font-family: var(--paragraph-font, 'Roboto', serif);
+  color: var(--second-color);
+  font-family: var(--paragraph-font);
 }
 
 /* Links */
 a {
-  color: var(--nav-link-color, #1e1e24);
+  color: var(--nav-link-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--nav-hover-link-color, #1e1e24);
-  background-color: var(--nav-hover-background-color, #ffa987);
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 /* Header */
 header {
-  background-color: var(--primary-color, #e54b4b);
+  background-color: var(--primary-color);
   color: #fff;
   padding: 20px 0;
   margin: 1rem auto;
@@ -114,7 +114,7 @@ header nav a {
 
 .hero article p {
     color: white;
-    font-family: var(--paragraph-font, 'Roboto', serif);
+    font-family: var(--paragraph-font);
 }
 
 .hero article img {
@@ -171,8 +171,8 @@ header nav a {
 
 /* Footer */
 footer {
-  background-color: var(--nav-background-color, #f7ebe8);
-  color: var(--second-color, #1e1e24);
+  background-color: var(--nav-background-color);
+  color: var(--second-color);
   padding: 10px 0;
   text-align: center;
   display: flex;
@@ -191,7 +191,7 @@ footer .social-media a {
 }
 
 button {
-  background-color: var(--accent1-color, #ffa987);
+  background-color: var(--accent1-color);
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -199,5 +199,128 @@ button {
 }
 
 button:hover {
-  background-color: var(--accent2-color, #444140);
+  background-color: var(--accent2-color);
+}
+
+/* Contact Us Page Specific Styles */
+
+/* Company Information Section */
+.company-info {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.company-info .map {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+}
+
+.team figure {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.team img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Contact Form Section */
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.contact-form .map {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-form div {
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent1-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent2-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--second-color);
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer p {
+    margin: 0;
+    color: var(--second-color);
+}
+
+footer .sociallinks a {
+    margin: 0 10px;
+}
+
+footer .sociallinks img {
+    width: 30px;
 }

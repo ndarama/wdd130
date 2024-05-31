@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rafting NOW | Contact Us</title>
+    <meta name="description" content="Contact Rafting NOW for inquiries about our rafting adventures, reservations, or website suggestions.">
+    <meta name="author" content="NDARAMA Mark">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Rafting Site Logo" width="140">
+        <h1>Rafting NOW</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <section class="company-info">
+            <h3>Company Information</h3>
+            <p>Address: 123 River Road, Rapids City, RC 12345</p>
+            <p>Phone: +1 555 123 4567</p>
+            <p>Email: info@raftingnow.com</p>
+
+        </section>
+        <section class="team">
+            <h3>Meet Our Team</h3>
+            <figure>
+                <img src="images/employee1.jpeg" alt="Employee 1">
+                <figcaption>John Doe - Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpeg" alt="Employee 2">
+                <figcaption>Jane Smith - Operations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpeg" alt="Employee 3">
+                <figcaption>Mike Johnson - Safety Officer</figcaption>
+            </figure>
+        </section>
+        <br></br>
+        <section class="contact-form">
+            <h3>Get in Touch!</h3>
+            <div class="map">
+                <h4>On Map</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631590488!3d-37.8172094420219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727a6f4e6f8b0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1614030582001!5m2!1sen!2sau" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <br></br>
+            <form action="submit_form.php" method="post">
+                <h4>Contact Form</h4>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="purpose">Purpose:</label>
+                <div>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 🎃 NDARAMA Mark 🎃 Kigali, Rwanda</p>
+        <nav class="sociallinks"> 
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" width="50"></a>
+            <a href="https://twitter.com"><img src="images/Twitter.svg" alt="Twitter" width="50"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" width="50"></a>
+        </nav>
+    </footer>
+</body>
+</html>
