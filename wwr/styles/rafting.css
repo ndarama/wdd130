@@ -244,9 +244,8 @@ button:hover {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    
+    text-align: center;
 }
-
 .contact-form .map {
     flex: 1;
     min-width: 300px;
@@ -264,7 +263,7 @@ button:hover {
 }
 
 .contact-form label {
-    display: block;
+    display: inline-block;
     margin: 10px 0 5px;
 }
 
@@ -279,7 +278,9 @@ button:hover {
 }
 
 .contact-form input[type="radio"] {
+    display: inline-block;
     margin-right: 5px;
+
 }
 
 .contact-form div {
