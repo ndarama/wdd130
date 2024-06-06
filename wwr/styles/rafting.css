@@ -123,6 +123,53 @@ header nav a {
   margin-right: auto;
 }
 
+/* Heros Trips Section Styles */
+.heros {
+  position: relative;
+  text-align: center;
+  color: var(--second-color);
+}
+
+.heros img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.heros .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+}
+
+.heros h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.heros p {
+  font-size: 1.5rem;
+}
+
+.heros .cta {
+  background-color: var(--accent1-color);
+  border: none;
+  color: var(--second-color);
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.heros .cta:hover {
+  background-color: var(--accent2-color);
+}
+
+/* About Us Page Specific Styles */
+
 /* History Section */
 .history {
   display: flex;
@@ -168,38 +215,148 @@ header nav a {
   color: white;
   padding: 5px;
 }
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #fff;
+}
 
-/* Footer */
-footer {
-  background-color: var(--nav-background-color);
-  color: var(--second-color);
-  padding: 10px 0;
+.features .feature {
   text-align: center;
+  margin: 10px;
+}
+
+.features img {
+  width: 480px ;
+  height: Auto;
+}
+
+/* Info Section */
+.info {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #f1f1f1;
+  position: relative;
 }
 
-footer .social-media {
-  display: flex;
-  justify-content: flex-end;
+.info img {
+  width: 60%;
+  height: auto;
 }
 
-footer .social-media a {
-  margin-left: 10px;
+.info .info-text {
+  max-width: 600px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-button {
+.info .info-text button {
   background-color: var(--accent1-color);
   border: none;
-  color: #fff;
+  color: var(--second-color);
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.info .info-text button:hover {
+  background-color: var(--accent2-color);
+}
+
+/* Newsletter Section */
+.newsletter {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.newsletter h2 {
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter label {
+  margin: 10px 0 5px;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: var(--accent1-color);
+  border: none;
+  color: var(--second-color);
   padding: 10px 20px;
   cursor: pointer;
 }
 
-button:hover {
+.newsletter button:hover {
   background-color: var(--accent2-color);
+}
+
+
+/* Trips Page Specific Styles */
+.trip-details {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.trip-details .trips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.trip-details .trip {
+  max-width: 300px;
+  text-align: center;
+  margin: 20px;
+}
+
+.trip-details .trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.trip-table {
+  margin-top: 40px;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.trip-table th, .trip-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.trip-table th {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 /* Contact Us Page Specific Styles */
@@ -303,25 +460,31 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: var(--nav-background-color);
-    color: var(--second-color);
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  background-color: #e7e7e7;
+  color: var(--primary-color);
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer p {
-    margin: 0;
-    color: var(--second-color);
+  margin: 0;
 }
 
-footer .sociallinks a {
-    margin: 0 10px;
+footer nav {
+  display: flex;
+  align-items: center;
 }
 
-footer .sociallinks img {
-    width: 30px;
+footer nav a {
+  margin: 0 10px;
 }
+
+footer .social-links a {
+  margin: 0 5px;
+}
+
+footer .social-links img {
+  width: 30px;

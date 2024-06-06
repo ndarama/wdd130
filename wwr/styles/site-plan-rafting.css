@@ -74,3 +74,20 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+
+/* Subscribe Thank You Section */
+.subscribe-thank-you {
+  display: none;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.subscribe-thank-you h2 {
+  margin-bottom: 20px;
+}
+
+.subscribe-thank-you p {
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
